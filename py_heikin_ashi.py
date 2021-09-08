@@ -3,7 +3,7 @@ import numpy as np
 def heiken_ashi(data):
   res=pd.DataFrame()
   try: 
-    res["Date"]=data.index
+    res["Date"]=data.date
    except:
     res["Date"]=data.index
   O=[0]
